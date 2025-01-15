@@ -14,9 +14,9 @@ public class Orders extends JFrame {
 	private JPanel contentPane;
 	private JTable table;
 	private DefaultTableModel tableModel;
-	private static final String DB_URL = "jdbc:mysql://localhost:3306/Shop";
+	private static final String DB_URL = "URL";
 	private static final String USER = "root";
-	private static final String PASS = "Darende250";
+	private static final String PASS = "enteryourpassword";
 
 	public Orders() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
