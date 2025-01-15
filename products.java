@@ -80,7 +80,7 @@ public class products extends JFrame {
 		setContentPane(contentPane);
 
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Shop", "root", "Darende250");
+		Connection con = DriverManager.getConnection("URL", "root", "enteryourpassword");
 
 		Statement stmt = con.createStatement();
 		ResultSet rs = stmt.executeQuery("SELECT * FROM Product");
@@ -225,7 +225,7 @@ public class products extends JFrame {
 			    public void actionPerformed(ActionEvent e) {
 			        String checkStockSql = "SELECT stock FROM Product WHERE product_id = ?";
 			        String updateStockSql = "UPDATE Product SET stock = stock - 1 WHERE product_id = ?";
-			        try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Shop", "root", "Darende250");
+			        try (Connection con = DriverManager.getConnection("URL", "root", "enteryourpassword");
 			             PreparedStatement checkStmt = con.prepareStatement(checkStockSql)) {
 
 			            checkStmt.setInt(1, id);
@@ -312,7 +312,7 @@ public class products extends JFrame {
 		setContentPane(contentPane);
 
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Shop", "root", "Darende250");
+		Connection con = DriverManager.getConnection("URL", "root", "enteryourpassword");
 
 		Statement stmt = con.createStatement();
 		ResultSet rs = stmt.executeQuery("SELECT * FROM Product");
@@ -451,7 +451,7 @@ public class products extends JFrame {
 			    public void actionPerformed(ActionEvent e) {
 			        String checkStockSql = "SELECT stock FROM Product WHERE product_id = ?";
 			        String updateStockSql = "UPDATE Product SET stock = stock - 1 WHERE product_id = ?";
-			        try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Shop", "root", "Darende250");
+			        try (Connection con = DriverManager.getConnection("URL", "root", "enteryourpassword");
 			             PreparedStatement checkStmt = con.prepareStatement(checkStockSql)) {
 
 			            checkStmt.setInt(1, id);
