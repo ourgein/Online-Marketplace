@@ -60,8 +60,8 @@ public class admin_signup extends JFrame {
 
 				try {
 					Class.forName("com.mysql.cj.jdbc.Driver");
-					Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Shop", "root",
-							"Darende250");
+					Connection con = DriverManager.getConnection("URL", "root",
+							"enteryourpassword");
 					String query = "INSERT INTO admin (name, email, password) VALUES (?, ?, ?)";
 					PreparedStatement pstmt = con.prepareStatement(query);
 					pstmt.setString(1, adminName);
