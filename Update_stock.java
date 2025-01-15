@@ -86,9 +86,9 @@ public class Update_stock extends JFrame {
 	 * Update the stock of the product in the database.
 	 */
 	private void updateStock(String productName, String newStock) {
-		String url = "jdbc:mysql://localhost:3306/Shop"; // Change to your database URL
+		String url = "URL"; // Change to your database URL
 		String user = "root"; // Change to your database username
-		String password = "Darende250"; // Change to your database password
+		String password = "enteryourpassword"; // Change to your database password
 
 		String sql = "UPDATE Product SET stock = ? WHERE name = ?"; // Change to your table and column names
 
