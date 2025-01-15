@@ -78,8 +78,8 @@ public class login extends JFrame {
 
 				try {
 					Class.forName("com.mysql.cj.jdbc.Driver");
-					Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Shop", "root",
-							"Darende250");
+					Connection con = DriverManager.getConnection("URL", "root",
+							"enteryourpassword");
 
 					Statement stm = con.createStatement();
 
