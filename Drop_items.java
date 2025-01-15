@@ -74,9 +74,9 @@ public class Drop_items extends JFrame {
 	 * Drop product from the database.
 	 */
 	private void dropProduct(String productName) {
-		String url = "jdbc:mysql://localhost:3306/Shop"; // Change to your database URL
+		String url = "URL"; // Change to your database URL
 		String user = "root"; // Change to your database username
-		String password = "Darende250"; // Change to your database password
+		String password = "enteryourpassword"; // Change to your database password
 
 		String sql = "DELETE FROM Product WHERE name = ?"; // Change to your table and column names
 
