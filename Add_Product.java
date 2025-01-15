@@ -158,9 +158,9 @@ public class Add_Product {
 	 * Method to upload product details to MySQL database.
 	 */
 	private void uploadProduct(String name, String price, String stock) {
-		String jdbcUrl = "jdbc:mysql://localhost:3306/Shop"; // Replace with your database URL
+		String jdbcUrl = "URL"; // Replace with your database URL
 		String jdbcUser = "root"; // Replace with your database username
-		String jdbcPassword = "Darende250"; // Replace with your database password
+		String jdbcPassword = "enteryourpassword"; // Replace with your database password
 
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
