@@ -84,7 +84,7 @@ public class show_product extends JFrame {
 		setContentPane(contentPane);
 
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Shop", "root", "Darende250");
+		Connection con = DriverManager.getConnection("URL", "root", "enteryourpassword");
 
 		Statement stmt = con.createStatement();
 		ResultSet rs = stmt.executeQuery("SELECT * FROM Product");
