@@ -99,7 +99,7 @@ public class sign_up {
 				try {
 					Class.forName("com.mysql.cj.jdbc.Driver");
 					Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Shop", "root",
-							"Darende250");
+							"enteryourpassword");
 
 					String username = user_text.getText();
 					String email = email_text.getText();
